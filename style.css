@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 720px;
+}
+
+/* Tiêu đề */
+.title {
+    font-size: 2rem;
+    color: #e94560;
+    letter-spacing: 1px;
+}
+
+/* Camera */
+.camera-wrapper {
+    position: relative;
+    width: 100%;
+    background: #16213e;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #0f3460;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#videoFeed {
+    width: 100%;
+    display: none;        /* Ẩn cho đến khi bắt đầu */
+    border-radius: 14px;
+}
+
+.no-detection {
+    position: absolute;
+    color: #aaaaaa;
+    font-size: 1rem;
+}
+
+/* Thông số */
+.stats {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.stat-box {
+    background: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e94560;
+}
+
+/* Nút điều khiển */
+.controls {
+    display: flex;
+    gap: 16px;
+}
+
+button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#startBtn {
+    background-color: #e94560;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #0f3460;
+    color: white;
+}

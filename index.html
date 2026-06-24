@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Counter</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Tiêu đề -->
+        <h1 class="title">🏋️ Exercise Counter</h1>
+
+        <!-- Khu vực camera -->
+        <div class="camera-wrapper">
+            <img id="videoFeed" src="" alt="Camera Feed"/>
+            <div id="noDetection" class="no-detection">
+                Không phát hiện người...
+            </div>
+        </div>
+
+        <!-- Thông số hiển thị -->
+        <div class="stats">
+
+            <div class="stat-box">
+                <span class="stat-label">Số lần</span>
+                <span class="stat-value" id="counter">0</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Trạng thái</span>
+                <span class="stat-value" id="stage">-</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Góc đầu gối</span>
+                <span class="stat-value" id="angle">0°</span>
+            </div>
+
+        </div>
+
+        <!-- Nút điều khiển -->
+        <div class="controls">
+            <button id="startBtn" onclick="startCamera()">▶ Bắt đầu</button>
+            <button id="resetBtn" onclick="resetCounter()">🔄 Reset</button>
+        </div>
+
+    </div>
+
+    <script src="/static/js/camera.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
